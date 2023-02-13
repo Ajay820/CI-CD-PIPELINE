@@ -14,6 +14,10 @@ app.get("/logout",(req,res)=>{
     res.send("this is logout file")
 })
 
+app.get("/error",()=>{
+    res.send("can't access this page")
+})
+
 app.listen(4000,()=>{
     console.log("server is running at port 4000")
 })
